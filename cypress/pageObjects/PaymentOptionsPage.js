@@ -6,7 +6,7 @@ export class PaymentOptionsPage extends BasePage {
   }
 
   static get clickAddress() {
-    return cy.contains('**3847').parents('mat-row').find('input[type="radio"]');
+    return cy.contains('**5678').parents('mat-row').find('input[type="radio"]');
   }
 
   static get continueButton() {
