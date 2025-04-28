@@ -6,11 +6,11 @@ export class DeliveryMethodPage extends BasePage {
   }
 
   static get standardButton() {
-    return cy.get("#mat-radio-44-input")
+    return cy.get('mat-cell').contains('Standard Delivery');
   }
 
   static get continueButton() {
     return cy.get("button[aria-label='Proceed to delivery method selection']");
   }
-
+  
 }

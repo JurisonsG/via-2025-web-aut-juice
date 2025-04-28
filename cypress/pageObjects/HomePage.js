@@ -9,6 +9,10 @@ export class HomePage extends BasePage {
     return cy.get("[aria-label='Close Welcome Banner']");
   }
 
+  static get ReturnToHomePageButton() {
+    return cy.get("#homeButton");
+
+  }
   static get meWantItButton() {
     return cy.get("[aria-label='dismiss cookie message']");
   }
@@ -24,8 +28,6 @@ export class HomePage extends BasePage {
   static get userProfileButton() {
     return cy.get("button[aria-label='Go to user profile']");
   }
-
-
 
   static get searchIcon() {
     return cy.get("#searchQuery");
@@ -89,5 +91,14 @@ export class HomePage extends BasePage {
 
   static get myAddressesButton() {
     return cy.get("button[aria-label='Go to saved address page']");
+}
+
+static get ordersAndPaymentButton() {
+  return cy.get("button[aria-label='Show Orders and Payment Menu']");
+}
+
+
+static get paymentOptionsButton() {
+return cy.get("button[aria-label='Go to saved payment methods page']");
 }
 }
